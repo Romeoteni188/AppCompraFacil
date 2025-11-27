@@ -1,0 +1,35 @@
+# Ignorar control de versiones
+.git
+.gitignore
+
+# Directorios que NO deben ir en la imagen
+node_modules
+var
+vendor
+dumps
+
+# Archivos de entorno
+.env.local
+.env.*.local
+
+# Archivos temporales
+*.swp
+*.swo
+*~
+.#*
+#*
+
+# Nix (muy importante en tu caso)
+.nix
+.nix*
+.nix-channels
+.nix-defexpr
+.nix-profile
+result
+flake.nix
+flake.lock
+
+# Docker
+Dockerfile
+docker-compose.yml
+compose.override.yaml
