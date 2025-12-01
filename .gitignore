@@ -1,24 +1,49 @@
+# ------------------------------------------------------
+#    ENTORNOS (Nix + Direnv)
+# ------------------------------------------------------
 /.direnv
-.envrc
-.env
-.env.dev
+/.envrc
 
-###> symfony/framework-bundle ###
+# ------------------------------------------------------
+#    VARIABLES DE ENTORNO
+# ------------------------------------------------------
+/.env
+/.env.dev
 /.env.local
 /.env.local.php
 /.env.*.local
-/config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
+
+# ------------------------------------------------------
+#    SYMFONY (cache/logs/var/vendor)
+# ------------------------------------------------------
+/config/secrets/*/*decrypt.private.php
 /var/
 /vendor/
-###< symfony/framework-bundle ###
-docker-compose.yml
-###> pentatrion/vite-bundle ###
+
+# ------------------------------------------------------
+#    VITE / NPM / PNPM
+# ------------------------------------------------------
 /node_modules/
 /public/build/
-###< pentatrion/vite-bundle ###
 
-###> friendsofphp/php-cs-fixer ###
+# ------------------------------------------------------
+#    PHP-CS-FIXER
+# ------------------------------------------------------
 /.php-cs-fixer.php
 /.php-cs-fixer.cache
-###< friendsofphp/php-cs-fixer ###
+
+# ------------------------------------------------------
+#    ARCHIVOS TEMPORALES QUE VEO EN TU PROYECTO
+# ------------------------------------------------------
+*.conform.*
+
+# ------------------------------------------------------
+#    DOCKER (si los usas localmente)
+# ------------------------------------------------------
+docker-compose.yml
+
+# ------------------------------------------------------
+#    MISC
+# ------------------------------------------------------
+*.log
+*.cache

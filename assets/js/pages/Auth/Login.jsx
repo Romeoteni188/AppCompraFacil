@@ -31,7 +31,7 @@ export default function Login({
                                 name="email"
                                 defaultValue={initialEmail}
                                 placeholder="Ingrese su usuario"
-                                className="input input-success w-full"
+                                className="input input-success w-full mt-1"
                             />
                         </label>
 
@@ -46,7 +46,7 @@ export default function Login({
                                 type="password"
                                 name="password"
                                 placeholder="Ingrese su contraseña"
-                                className="input input-success w-full"
+                                className="input input-success w-full mt-1"
                             />
                         </label>
 
@@ -59,6 +59,14 @@ export default function Login({
                             className="btn btn-secondary w-full mt-8">
                             <i className="fas fa-door-open mr-2"></i> Entrar
                         </button>
+                        <button>
+                            <i className="fas fa-user-plus mr-2"></i>{" "}
+                            Registrarse
+                        </button>
+                        <p className="text-blue-700 italic">
+                            {" "}
+                            olvidades Contraseña
+                        </p>
                     </form>
                 </div>
             </div>

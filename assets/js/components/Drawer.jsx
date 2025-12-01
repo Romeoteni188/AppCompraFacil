@@ -80,6 +80,11 @@ export default function Drawer({ children, toggleId = "main-drawer", user }) {
                             <i class="fa-solid fa-users w-5 mr-3"></i> Clientes
                         </a>
                     </li>
+                    <li>
+                        <a href="/caja">
+                            <i class="fa-solid fa-users w-5 mr-3"></i> Caja
+                        </a>
+                    </li>
                     {/* OTRO SEPARADOR */}
                     <div className="divider my-2"></div>
 

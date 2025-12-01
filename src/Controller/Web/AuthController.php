@@ -18,7 +18,7 @@ final class AuthController extends AbstractController
     ) {
     }
 
-    #[Route('/login', name: 'app_login', methods: ['GET', 'POST'])]
+    #[Route('/login', name: 'web_login', methods: ['GET', 'POST'])]
     public function login(Request $request)
     {
         $session = $request->getSession();
